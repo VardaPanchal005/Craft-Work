@@ -7,9 +7,9 @@ from store.model.product import  Product
 class cart(View):
     def get(self,request):
        ids=list(request.session.get('cart').keys())
-       print(ids)
+       #print(ids)
        products=Product.get_products_by_id(ids)
-       print(products)
+       #print(products)
        data = {}
        data['products'] = products
        return render(request,'cart.html',data)

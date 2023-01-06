@@ -17,15 +17,16 @@ class CheckOut(View):
         products = Product.get_products_by_id(list(cart.keys()))
         print(address, phone, customer, cart, products)
 
-        # for product in products:
-        #     print(cart.get(str(product.id)))
-        #     order = Order(customer=Customer(id=customer),
-        #                   product=product,
-        #                   price=product.price,
-        #                   address=address,
-        #                   phone=phone,
-        #                   quantity=cart.get(str(product.id)))
-        #     order.save()
-        # request.session['cart'] = {}
+        for product in products:
+            print(cart.get(str(product.id)))
+            order = Order(customer=Customer(id=customer),
+                          product=product,
+                          price=product.price,
+                          address=address,
+                          phone=phone,
+                          quantity=cart.get(str(product.id)))
+            print(order)
+            order.save()
+        request.session['cart'] = {}
 
-        return redirect('store')
+        return redirect('orders')
