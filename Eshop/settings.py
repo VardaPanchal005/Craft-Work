@@ -129,8 +129,5 @@ MEDIA_ROOT=BASE_DIR
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
-
 ALLOWED_HOSTS = ['198.211.99.20', 'localhost', '127.0.0.1']
 
