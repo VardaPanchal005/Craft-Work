@@ -1,20 +1,19 @@
 {% extends 'base.html' %}
 
-
+{% load static %}
 {% block content %}
 
 <div class="container mt-4">
     
-    <div class="p-4 m-4">
-
+    <div class="p-4 m-4" >
+  
         
-        <div class="col-lg-5 rounded mx-auto border pt-4">
-            <div class="text-center col">
+        <div class="col-lg-5 rounded mx-auto border pt-4" style="background-color: #FFFFFF;">
+            <div class="text-center col" >
             
                 <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Shopping_cart_with_food_clip_art_2.svg/307px-Shopping_cart_with_food_clip_art_2.svg.png" alt=""
-                class="" style="height: 150px;">
-            <!-- <hr> -->
+                src="{% static "uploads/product/stationary.png" %}">
+
             <div class="display-8">Create An Account</div>
             <hr>
             </div>
@@ -28,7 +27,6 @@
                     {{error}}
                 </div>
                 {% endif %}
-                <!-- firstname -->
                 <div class="form-group">
                     <label for="">First Name</label>
                     <input type="text" name="firstname"
@@ -36,7 +34,6 @@
                      placeholder="">
                 </div>
 
-                <!-- last name -->
                 <div class="form-group">
                     <label for="">Last Name</label>
                     <input type="text" name="lastname" 
@@ -44,7 +41,6 @@
                     >
                 </div>
 
-                <!-- phone -->
                 <div class="form-group">
                     <label for="">Phone</label>
                     <input type="text" name="phone" 
@@ -53,7 +49,7 @@
                     placeholder="565698959"
                     >
                 </div>
-                <!-- email -->
+
                 <div class="form-group">
                     <label for="">Email</label>
                     <input required type="email" name="email" id=""
@@ -62,7 +58,6 @@
                 </div>
 
 
-                <!-- password -->
                 <div class="form-group">
                     <label for="">Password</label>
                     <input type="password" 

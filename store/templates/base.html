@@ -2,53 +2,46 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <title>Welcome to Craft Work!</title>
-
+  <link rel="stylesheet" href="\templatetags\style.css">
   <style>
     nav{
-      background-color:whitesmoke;
+      background-color:#FFFFFF;
       
     }
     
-
-
-
-.display-8{
+  
+  .display-8{
   font-weight: 200;
   font-size: 30px; 
   
-}
-
-body {
+  }
   
-  background-color: #ff8e00;
-}
- a{
-  color:#ff8e00;
- }
- 
-  </style>
+  body {
+  
+  background-color: #002366;
+  }
+  a{
+  color:#002366;
+  }
+
+  
+</style>
 </head>
 
 <body>
-  
-
-  <!-- navbar -->
- 
   <nav class="one-edge-shadow 
   sticky-top navbar 
-  navbar-expand-lg
-    " >
+  navbar-expand-lg" >
    
-    <a class="navbar-brand" href="/" ><img src="https://see.fontimg.com/api/renderfont4/xJyV/eyJyIjoiZnMiLCJoIjoyNywidyI6MTUwMCwiZnMiOjE4LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Q3JhZnQtV29yaw/dk-cool-crayon.png" alt="Crayon fonts"></a></a>
+    <p style="font-size: 25px;">C̠̠r̠a̠̠f̠̠t̠̠w̠̠o̠̠r̠̠k̠</p>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -57,25 +50,23 @@ body {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="/store">&nbsp &nbsp Store <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/store">&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp  &nbsp STORE <span class="sr-only">(current)</span></a>
         </li>
-
-      </ul>
 
 
       <ul class=" navbar-nav my-2 my-lg-0">
         <li class="nav-item ">
-          <a class="nav-link" href="/cart">Cart 
+          <a class="nav-link" href="/cart">CART
             <span class="badge badge-info">{{request.session.cart.keys|length}}</span>
             <span class="sr-only">(current)</span></a>
         </li>
         {% if request.session.customer %}
         
         <li class="nav-item ">
-          <a class="nav-link" href="/orders">Orders<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/orders">ORDERS<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="/logout">Logout<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/logout">LOGOUT<span class="sr-only">(current)</span></a>
         </li>
         {% else %}
        
@@ -98,8 +89,6 @@ body {
 
     {% block content %}{% endblock %}
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
