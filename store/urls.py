@@ -1,5 +1,5 @@
 from xml.etree.ElementInclude import include
-from django.urls import path
+from django.urls import path 
 from .views.home import Index , store
 from .views.signup import Signup
 from .views.login import Login , logout
@@ -7,6 +7,7 @@ from .views.cart import cart
 from .views.checkout import CheckOut
 from .views.orders import OrderView
 from .middleware.auth import  auth_middleware
+
 
 
 urlpatterns = [

@@ -10,14 +10,11 @@
         
         <div class="col-lg-5 rounded mx-auto border pt-4" style="background-color: #FFFFFF;">
             <div class="text-center col" >
-            
-                <img 
-                src="{% static "uploads/product/stationary.png" %}">
 
-            <div class="display-8">Create An Account</div>
+            <div class="display-8" style="color: #002366;"><b>Create your Account</b></div>
             <hr>
             </div>
-            <h3 hidden class="alert alert-light border rounded">Create An Account</h3>
+            <h3 hidden class="alert alert-light border rounded">Create Account</h3>
             <form action="/signup" method="POST">
                 
                 {% csrf_token %}
@@ -68,7 +65,7 @@
 
                 <hr>
                 <div class="form-group">
-                    <input class="btn btn-sm btn-info" type="submit" value="Create An Account ">
+                    <input class="btn btn-sm btn-info" type="submit" value="Create account ">
                 </div>
 
                 
