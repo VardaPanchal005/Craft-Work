@@ -6,7 +6,7 @@ Django==4.2.26
 docopt==0.6.2
 filelock==3.9.0
 idna==3.11
-mysqlclient==2.1.1
+mysqlclient==2.2.7
 Pillow==10.3.0
 pipreqs==0.4.13
 platformdirs==2.6.2
