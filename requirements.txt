@@ -5,11 +5,11 @@ distlib==0.3.6
 Django==4.2.25
 docopt==0.6.2
 filelock==3.9.0
-idna==3.4
+idna==3.11
 mysqlclient==2.1.1
 Pillow==9.4.0
-pipreqs==0.4.11
-platformdirs==4.5.0
+pipreqs==0.4.13
+platformdirs==2.6.2
 requests==2.28.2
 sqlparse==0.4.3
 tzdata==2022.7
