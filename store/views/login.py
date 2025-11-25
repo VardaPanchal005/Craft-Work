@@ -32,7 +32,7 @@ class Login(View):
         else:
             error_message = 'Email or Password invalid !!'
 
-        print(email, password)
+        # print(email, password)  # Removed to avoid logging sensitive data
         return render(request, 'login.html', {'error': error_message})
 
 def logout(request):
