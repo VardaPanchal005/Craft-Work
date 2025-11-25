@@ -32,7 +32,7 @@ class Signup(View):
         error_message = self.validateCustomer(customer)
 
         if not error_message:
-            print(first_name, last_name, phone, email, password)
+            print(first_name, last_name, phone, email)
             customer.password = make_password(customer.password)
             customer.register()
             return redirect('homepage')
