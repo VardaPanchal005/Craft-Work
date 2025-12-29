@@ -1,4 +1,5 @@
 from django.shortcuts import render , redirect , HttpResponseRedirect
+from django.utils.http import url_has_allowed_host_and_scheme
 
 from django.contrib.auth.hashers import  check_password
 from store.model.customer import Customer as Ctm
@@ -22,7 +23,8 @@ class Login(View):
                 request.session['customer'] = customer.id
                 request.session['customer_name'] = customer.first_name
 
-                if Login.return_url:
+                if Login.return_url and url_has_allowed_host_and_scheme(
+                        Login.return_url, allowed_hosts={request.get_host()}):
                     return HttpResponseRedirect(Login.return_url)
                 else:
                     Login.return_url = None
