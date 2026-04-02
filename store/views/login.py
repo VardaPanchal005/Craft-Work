@@ -9,7 +9,6 @@ from django.views import  View
 class Login(View):
     return_url = None
     def get(self , request):
-        Login.return_url = request.GET.get('return_url')
         return render(request , 'login.html')
 
     def post(self , request):
@@ -23,11 +22,13 @@ class Login(View):
                 request.session['customer'] = customer.id
                 request.session['customer_name'] = customer.first_name
 
-                if Login.return_url and url_has_allowed_host_and_scheme(
-                        Login.return_url, allowed_hosts={request.get_host()}):
-                    return HttpResponseRedirect(Login.return_url)
+                return_url = request.GET.get('return_url') or request.POST.get('return_url')
+                if return_url and url_has_allowed_host_and_scheme(
+                        return_url,
+                        allowed_hosts={request.get_host()},
+                        require_https=request.is_secure()):
+                    return HttpResponseRedirect(return_url)
                 else:
-                    Login.return_url = None
                     return redirect('homepage')
             else:
                 error_message = 'Email or Password invalid !!'
