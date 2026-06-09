@@ -10,7 +10,7 @@ mysqlclient==2.2.8
 Pillow==12.2.0
 pipreqs==0.4.13
 platformdirs==4.9.6
-requests==2.33.1
+requests==2.34.2
 sqlparse==0.5.5
 tzdata==2026.2
 urllib3==2.6.3
