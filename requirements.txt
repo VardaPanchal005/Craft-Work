@@ -13,6 +13,6 @@ platformdirs==4.9.6
 requests==2.33.1
 sqlparse==0.5.5
 tzdata==2026.2
-urllib3==2.6.3
+urllib3==2.7.0
 virtualenv==21.3.3
 yarg==0.1.10
