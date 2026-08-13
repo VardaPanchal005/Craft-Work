@@ -5,14 +5,14 @@ distlib==0.4.3
 Django==6.0.5
 docopt==0.6.2
 filelock==3.29.0
-idna==3.16
+idna==3.18
 mysqlclient==2.2.8
 Pillow==12.2.0
 pipreqs==0.4.13
-platformdirs==4.9.6
+platformdirs==4.10.0
 requests==2.34.2
 sqlparse==0.5.5
 tzdata==2026.2
 urllib3==2.7.0
-virtualenv==21.3.3
+virtualenv==21.5.0
 yarg==0.1.10
