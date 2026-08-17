@@ -4,7 +4,7 @@ charset-normalizer==3.4.7
 distlib==0.4.0
 Django==6.0.7
 docopt==0.6.2
-filelock==3.29.0
+filelock==3.32.3
 idna==3.18
 mysqlclient==2.2.8
 Pillow==12.3.0
