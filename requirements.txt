@@ -9,7 +9,7 @@ idna==3.18
 mysqlclient==2.2.8
 Pillow==12.3.0
 pipreqs==0.4.13
-platformdirs==4.10.0
+platformdirs==4.11.3
 requests==2.34.2
 sqlparse==0.6.0
 tzdata==2026.2
