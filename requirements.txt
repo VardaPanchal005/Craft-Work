@@ -12,7 +12,7 @@ pipreqs==0.4.13
 platformdirs==4.11.3
 requests==2.34.2
 sqlparse==0.6.0
-tzdata==2026.2
+tzdata==2026.3
 urllib3==2.7.0
 virtualenv==21.7.4
 yarg==0.1.10
