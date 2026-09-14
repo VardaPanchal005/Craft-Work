@@ -2,7 +2,7 @@ asgiref==3.12.1
 certifi==2026.7.22
 charset-normalizer==3.5.1
 distlib==0.4.0
-Django==6.1
+Django==6.1.1
 docopt==0.6.2
 filelock==3.32.3
 idna==3.19
